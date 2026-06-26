@@ -1,0 +1,93 @@
+@use 'config' as c;
+ 
+.artAcordeon01{
+    width: 100%;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+    align-items: center;
+    justify-content: flex-start;
+    @media only screen and (min-width:c.$tablet){
+        width: 80%;
+        padding: initial;
+    }
+    .caja1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.3rem;
+        
+        @media only screen and (min-width:c.$tablet){
+            width: 80%;
+            flex-direction: row;
+            column-gap: 1.5rem;
+            align-items: center;
+
+        }
+        >img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+    .contenedor{
+        // background-color: aqua;
+        width: 100%;
+        display: flex;
+        padding: 1rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        @media only screen and (min-width:c.$tablet){
+            width: 100%;
+          padding: initial;
+          flex-direction: row;  
+        
+        }
+        .ficha{
+        //    background-color: bisque;
+            width: 100%;
+            row-gap: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 6px black;
+            padding: 1.5rem;
+            align-items: center;
+            justify-content: center;
+            
+          
+            @media only screen and (min-width:c.$tablet){
+                width: 45%;
+            }
+            @media only screen and (min-width:c.$desktop){
+                width: 30%;
+            }
+            .textFicha{
+                height: 50px;
+                opacity: 0;
+                overflow: scroll;
+                interpolate-size: allow-keywords;
+                transition:ease-in-out .5s;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            
+        
+            }
+             
+            .abrir{
+                opacity: 1;
+                height: 150px;
+              
+
+            }
+        }
+    }
+
+
+   
+}

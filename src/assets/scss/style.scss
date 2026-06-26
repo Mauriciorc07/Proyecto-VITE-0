@@ -1,0 +1,60 @@
+@use './assets/config' as c;
+@use './assets/art01';
+@use './assets/art02';
+@use './assets/art03';
+@use './assets/artGrid';
+@use './assets/artPerson';
+@use './assets/module01';
+@use './assets/artJs';
+@use './assets/artAcordeon01';
+@use './assets/slider01';
+@use './assets/topBotom';
+@use './assets/animations';
+@use './assets/nav';
+@use './assets/darkmode';
+@use './assets/modal';
+
+*{
+  margin:0;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+header{
+ 
+  height: 100dvh;
+  // background: -webkit-linear-gradient(80deg,red,blue,white);
+  background:linear-gradient(80deg,c.$color03, c.$color04, c.$color-00);
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+
+h1{
+  font-size: clamp(1rem,5vw,6rem);
+  font-weight: 900;
+  color:c.$color-00;
+  font-family: c.$fuente01;
+
+  //  @media only screen and (min-width: c.$tablet){
+  //     color: c.$color01;
+  //  }
+  //     @media only screen and(min-width: c.$desktop){
+  //       color: yellow;
+  //     }
+
+}
+
+}
+
+
+
+ 
+ 

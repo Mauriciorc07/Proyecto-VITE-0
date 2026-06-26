@@ -1,0 +1,21 @@
+@use 'config' as c;
+
+.buttonn1{
+    position: fixed;
+    bottom: 9%;
+    right: 35px;
+    z-index: 99999;
+    background-color: rgba(c.$colorbtn , 0.7 );
+    width: 80px;
+    height: 80px;
+    color: c.$color-00;
+    border-radius: 50%;
+    transition: all 1s;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    &:hover{
+        scale:.8;
+        background-color: rgba(c.$color03,0.7 );
+    }
+}

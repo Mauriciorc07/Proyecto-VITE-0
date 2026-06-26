@@ -1,0 +1,27 @@
+@use 'config' as c;
+
+.module01{
+     background-color: rgba(112, 107, 107, 0.192);
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    gap: 1rem;
+
+   >div{
+        img{
+            // background-color: aqua;
+            width: 100%;
+            padding: 15px;
+           filter: c.$color-icon;
+
+        }
+        h4{
+            font-family: c.$fuenteText;
+            padding: 15px;
+        }
+
+    }
+}

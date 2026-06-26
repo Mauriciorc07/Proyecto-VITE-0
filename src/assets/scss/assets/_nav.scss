@@ -1,0 +1,30 @@
+@use 'config' as c;
+
+.header--darkModeButton{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 25px;
+    filter: drop-shadow(1px 1px solid c.$colorbtn);
+
+// .nav__container{
+//     position: fixed;
+//     right: 25px;
+//     top: 25px;
+    // &--darkModeButton{
+        // padding: 1rem;
+    // z-index: 1000;
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        font-size: 2rem;
+        object-position: center;
+        color: c.$color01;
+        background-color: c.$colorbtn;
+
+    }
+   

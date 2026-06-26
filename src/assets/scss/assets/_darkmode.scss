@@ -1,0 +1,11 @@
+@use 'config' as c;
+
+body.dark{
+    background-color:#0f0f0f ;
+    color: c.$color-00;
+    transition: ease-in .3s;
+    h1,h2,h3{
+        color: orange;
+    
+    }
+}

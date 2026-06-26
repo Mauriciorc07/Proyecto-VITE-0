@@ -1,0 +1,35 @@
+@use 'config' as c;
+
+#modal{
+    position: fixed;
+    inset: 0;
+    z-index: 8888;
+    // background-color: rgba(184, 111, 28, 0.61);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal__container{
+        width: 80%;
+        background-color: c.$color01;
+        height: 600px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        .modal__header{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .modal--btn-close{
+                font-size: 2rem;
+                transition: scale 300ms ;
+                &:hover{
+                    cursor: pointer;
+                    scale:0.7;
+                }
+                
+            }
+        }
+    
+    }
+}
