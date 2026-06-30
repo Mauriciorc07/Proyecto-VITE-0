@@ -19,17 +19,14 @@ export default function modal(template){
 
     const $btnclose = $modal.querySelector(".modal--btn-close");
     // cerramos la modal cuando pulse click en el boton
-    $btnclose.addEventListener("click", ()=> $modal.remove())
+    $btnclose.addEventListener("click", ()=> $modal.remove());
 
+    $modal.addEventListener("click", (e)=> {
+     if(e.target.closest()){
+
+     }
+    });
 
     return $modal;
-}
 
-    // console.log($modal.className)
-    // cerramos la modal cuando se pulse click
-    // $modal.addEventListener("click", (e)=>{
-       
-    //     if(e.target.classList.contains("modal__container")){
-    //         $modal.remove();
-    // //     }      
-    // });
+}

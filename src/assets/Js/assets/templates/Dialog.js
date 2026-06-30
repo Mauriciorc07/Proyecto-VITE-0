@@ -7,6 +7,8 @@ export default function Dialog(){
             <span> ¿quieres ver las <strong> promociones?</strong></span>
         <a href="#" class="boton">boton1</a>
         <a href="#" class="boton">boton2</a>
-    </div>
+        </div>
+        <button class="btn btn-primary" type:"button" data-modal-close>Aceptar</button>
+        <button class="btn btn-outlineprimary" type:"button" data-modal-close>Cerrar</button>
     `;
 }

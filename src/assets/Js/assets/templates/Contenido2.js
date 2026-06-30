@@ -11,6 +11,10 @@ export default function Contenido2(){
           <a href="#" class="boton">boton1</a>
           <a href="#" class="boton">boton2</a>
           
+          <button class="btn btn-primary" type:"button" data-modal-close>Aceptar</button>
+
+         <button class="btn btn-outlineprimary" type:"button" data-modal-close>Cerrar</button>
+
         </article>
  
     </div>
