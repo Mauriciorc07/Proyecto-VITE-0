@@ -18,13 +18,21 @@ export default function modal(template){
     `;
 
     const $btnclose = $modal.querySelector(".modal--btn-close");
+      const $modalContainer = $modal.querySelector(".modal__container");
     // cerramos la modal cuando pulse click en el boton
     $btnclose.addEventListener("click", ()=> $modal.remove());
 
     $modal.addEventListener("click", (e)=> {
-     if(e.target.closest()){
-
+        
+     if(e.target.closest("[data-modal-close]")){
+        $modal.remove()
      }
+// cerramos la modal si se pulsa fuera del container
+     if(!$modalContainer.contains(event.target)){
+        $modal.remove()
+     }
+
+
     });
 
     return $modal;

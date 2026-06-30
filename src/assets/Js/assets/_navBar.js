@@ -4,6 +4,8 @@ import { compileString } from "sass"
   
  const $navT =  document.querySelector(".navbar")
 
+//  const $fnav = document.querySelectorAll(".")
+
   window.addEventListener("scroll", (e)=>{
        const scrollTop = document.documentElement.scrollTop
         // console.log(scrollTop)

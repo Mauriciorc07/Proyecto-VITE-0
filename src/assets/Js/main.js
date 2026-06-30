@@ -14,6 +14,7 @@ import modal from './assets/_modal.js'
 import Dialog from './assets/templates/Dialog.js'
 import Contenido1 from './assets/templates/Contenido1.js'
 import Contenido2 from './assets/templates/Contenido2.js'
+import validationForm from './assets/_validationForm.js'
 
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -42,4 +43,5 @@ document.addEventListener("DOMContentLoaded", () =>{
             document.body.appendChild(modal(Contenido2()));
     });
 
+    validationForm();
 }); //asi llamo a la funcion que viene del import
